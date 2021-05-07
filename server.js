@@ -2,7 +2,7 @@ import app from "./app";
 let port = 3001;
 let { NODE_ENV, PORT: productionPort, IP: productionIP } = process.env;
 
-if (NODE_ENV === "development") {
+if (NODE_ENV !== "production") {
   app.listen(port, () => {
     console.log(`Live server running in on port ${port}`);
   });
