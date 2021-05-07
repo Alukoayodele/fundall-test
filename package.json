@@ -4,8 +4,9 @@
   "description": "Mini Project",
   "main": "server.js",
   "scripts": {
-    "start": "sequelize db:migrate && node -r esm server.js",
-    "dev": "nodemon -r esm server.js"
+    "start": "node -r esm server.js",
+    "dev": "nodemon -r esm server.js",
+    "prestart": "sequelize db:migrate"
   },
   "author": "Aluko Ayodele",
   "license": "MIT",
