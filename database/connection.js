@@ -5,7 +5,6 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL, {
     dialect: "mysql",
     protocol: "mysql",
-    operatorsAliases: false,
   });
 } else {
   sequelize = new Sequelize("fundallMiniProject", "root", "AYOkunnumi@009", {
