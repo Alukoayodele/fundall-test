@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node -r esm server.js",
     "dev": "nodemon -r esm server.js",
-    "poststart": "sequelize db:migrate"
+    "prestart": "sequelize db:migrate"
   },
   "author": "Aluko Ayodele",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "passport": "^0.4.1",
-    "sequelize": "^6.6.2",
+    "sequelize": "^6.3.4",
     "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
