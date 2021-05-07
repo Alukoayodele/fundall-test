@@ -1,9 +1,5 @@
 import express from "express";
 import dotenv from "dotenv";
-import mysql from "mysql2";
-import sequelize from "./database/connection.js";
-import passport from "passport";
-import path from "path";
 import cors from "cors";
 import { router as AuthModule } from "./routes/auth.route";
 import { router as ExpenseModule } from "./routes/expenses.route";
